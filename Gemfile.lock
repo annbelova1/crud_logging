@@ -1,0 +1,99 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    activemodel (6.1.4.1)
+      activesupport (= 6.1.4.1)
+    activerecord (6.1.4.1)
+      activemodel (= 6.1.4.1)
+      activesupport (= 6.1.4.1)
+    activesupport (6.1.4.1)
+      concurrent-ruby (~> 1.0, >= 1.0.2)
+      i18n (>= 1.6, < 2)
+      minitest (>= 5.1)
+      tzinfo (~> 2.0)
+      zeitwerk (~> 2.3)
+    concurrent-ruby (1.1.9)
+    elasticsearch (7.15.0)
+      elasticsearch-api (= 7.15.0)
+      elasticsearch-transport (= 7.15.0)
+    elasticsearch-api (7.15.0)
+      multi_json
+    elasticsearch-model (7.2.0)
+      activesupport (> 3)
+      elasticsearch (~> 7)
+      hashie
+    elasticsearch-persistence (7.2.0)
+      activemodel (> 4)
+      activesupport (> 4)
+      elasticsearch (~> 7)
+      elasticsearch-model (= 7.2.0)
+      hashie
+    elasticsearch-rails (7.2.0)
+    elasticsearch-transport (7.15.0)
+      faraday (~> 1)
+      multi_json
+    faraday (1.8.0)
+      faraday-em_http (~> 1.0)
+      faraday-em_synchrony (~> 1.0)
+      faraday-excon (~> 1.1)
+      faraday-httpclient (~> 1.0.1)
+      faraday-net_http (~> 1.0)
+      faraday-net_http_persistent (~> 1.1)
+      faraday-patron (~> 1.0)
+      faraday-rack (~> 1.0)
+      multipart-post (>= 1.2, < 3)
+      ruby2_keywords (>= 0.0.4)
+    faraday-em_http (1.0.0)
+    faraday-em_synchrony (1.0.0)
+    faraday-excon (1.1.0)
+    faraday-httpclient (1.0.1)
+    faraday-net_http (1.0.1)
+    faraday-net_http_persistent (1.2.0)
+    faraday-patron (1.0.0)
+    faraday-rack (1.0.0)
+    hashie (4.1.0)
+    i18n (1.8.10)
+      concurrent-ruby (~> 1.0)
+    minitest (5.14.4)
+    multi_json (1.15.0)
+    multipart-post (2.1.1)
+    mustermann (1.1.1)
+      ruby2_keywords (~> 0.0.1)
+    rack (2.2.3)
+    rack-protection (2.1.0)
+      rack
+    ruby2_keywords (0.0.5)
+    sinatra (2.1.0)
+      mustermann (~> 1.0)
+      rack (~> 2.2)
+      rack-protection (= 2.1.0)
+      tilt (~> 2.0)
+    sinatra-activerecord (2.0.23)
+      activerecord (>= 4.1)
+      sinatra (>= 1.0)
+    sinatra-contrib (2.1.0)
+      multi_json
+      mustermann (~> 1.0)
+      rack-protection (= 2.1.0)
+      sinatra (= 2.1.0)
+      tilt (~> 2.0)
+    sqlite3 (1.4.2)
+    tilt (2.0.10)
+    tzinfo (2.0.4)
+      concurrent-ruby (~> 1.0)
+    zeitwerk (2.5.1)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  elasticsearch-model
+  elasticsearch-persistence
+  elasticsearch-rails
+  sinatra
+  sinatra-activerecord
+  sinatra-contrib
+  sqlite3
+
+BUNDLED WITH
+   2.1.4
